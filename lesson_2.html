@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let temperature = +prompt("enter the temperature");
+    while (temperature<20 || temperature>100){
+        if (temperature<20){
+            alert("need increase heat");
+            temperature = +prompt("enter the temperature");
+        }else if (temperature>100) {
+            alert("need reduce heat");
+            temperature = +prompt("enter the temperature");
+        }
+    }
+    alert("perfect");
+
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number1 = 0 , number2= 0, number3=1;
+    let divisibleBy5 = "";
+    for (let i=0; i<20;i++){
+        number1 = number2 + number3;
+        number3 = number2;
+        number2 = number1;
+        if (number1%5==0){
+            divisibleBy5 = number1;
+            break;
+        }
+    }
+    document.write(divisibleBy5);
+</script>
+</body>
+</html>

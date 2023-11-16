@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="enterNumber()">Play</button>
+<script>
+    function enterNumber() {
+       let guessRange = +prompt("enter the range");
+       let yourNumber = +prompt("enter your number");
+       let randomNumber = Math.floor(Math.random() * guessRange)
+       let count = 0;
+       for (let i=0 ;; i++) {
+          if (yourNumber==randomNumber) {
+              alert("congratulation");
+              break;
+          }else if (yourNumber!=randomNumber) {
+              if (yourNumber>randomNumber) {
+                  alert("the number you choose is larger than number random");
+              }else{
+                  alert("the number you choose is smaller than number random");
+              }
+              yourNumber = + prompt("enter your number");
+              count++;
+              if (count==3) {
+                  alert("you have run out of options");
+                  break;
+              }
+          }
+       }
+    }
+</script>
+</body>
+</html>
